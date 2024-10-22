@@ -1,5 +1,5 @@
 
-# Advanced House Price Prediction - Kaggle Competition
+# Advanced House Price Regression - Kaggle Competition
 
 ## Overview
 
