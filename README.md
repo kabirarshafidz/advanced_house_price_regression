@@ -3,7 +3,7 @@
 
 ## Overview
 
-This project aims to predict house prices using a comprehensive dataset from the [Advanced House Price Prediction competition on Kaggle](https://www.kaggle.com/c/house-prices-advanced-regression-techniques). The dataset contains various features, such as property characteristics and sale prices, allowing us to build a robust regression model to predict house values.
+This project aims to predict house prices using a comprehensive dataset from the [Advanced House Price Regression competition on Kaggle](https://www.kaggle.com/c/house-prices-advanced-regression-techniques). The dataset contains various features, such as property characteristics and sale prices, allowing us to build a robust regression model to predict house values.
 
 ## Objective
 
@@ -27,7 +27,6 @@ Key features include:
 1. **Data Preprocessing**:
    - Handle missing values.
    - Impute numerical and categorical data.
-   - Standardize/scale numerical features.
    - Encode categorical variables.
 
 2. **Feature Engineering**:
@@ -35,15 +34,12 @@ Key features include:
    - Select important features using techniques such as Mutual Information (MI) and Principal Component Analysis (PCA).
 
 3. **Modeling**:
-   - Train models such as:
-     - Linear Regression
-     - Random Forest
-     - Gradient Boosting (XGBoost, LightGBM)
+   - Train Gradient Boosting Regressor
    - Evaluate model performance using cross-validation.
 
 4. **Model Tuning**:
    - Optimize model hyperparameters to improve accuracy.
-   - Use techniques such as Grid Search and Random Search for tuning.
+   - Use techniques such as Grid Search for tuning.
 
 ## Evaluation Metric
 
@@ -57,30 +53,17 @@ RMSE = sqrt(mean((y_true - y_pred)²))
 
 The model's performance is evaluated based on RMSE. Key results include:
 
-- **Best Model**: [Model Name]
-- **Best RMSE on Validation Set**: [Score]
+- **Best Model**:
+```
+   GradientBoostingRegressor(learning_rate=0.01, max_depth=5, max_features='sqrt', min_samples_leaf=2, min_samples_split=10, n_estimators=1000, subsample=0.8)
+```
+  
+- **Best RMSE on Validation Set**: 0.12398
 - **Techniques Used**: Feature Engineering, Regularization, Ensemble Methods, etc.
 
 ## Conclusion
 
 This project demonstrates the application of advanced regression techniques to predict house prices. Future improvements could include deeper feature engineering, more complex model architectures, or ensembling multiple models for better accuracy.
-
----
-
-## How to Run
-
-1. Clone the repository:
-   ```bash
-   git clone [repository link]
-   ```
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Run the Jupyter notebook:
-   ```bash
-   jupyter notebook HousePricePrediction.ipynb
-   ```
 
 ## Acknowledgments
 
