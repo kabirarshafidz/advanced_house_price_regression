@@ -68,4 +68,3 @@ This project demonstrates the application of advanced regression techniques to p
 ## Acknowledgments
 
 - Kaggle for hosting the competition and providing the dataset.
-- [Insert any external resources or libraries you found useful].
